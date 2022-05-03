@@ -18,5 +18,6 @@ get '/about-us' do
 end
 
 get '/cat' do
-  erb(:index)
+  @rand_name = ["Amigo", "Misty", "Almond"].sample
+  erb :index
 end
