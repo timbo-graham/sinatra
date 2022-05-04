@@ -24,6 +24,6 @@ end
 
 get '/named-cat' do
   p params
-  @name = params[:name]
+  @instance_name = params[:name_test]
   erb :index
 end
